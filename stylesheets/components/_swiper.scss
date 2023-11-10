@@ -1,0 +1,15 @@
+.button-prev {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+.button-next {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        scale: 1.2;
+    }
+}

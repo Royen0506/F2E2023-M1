@@ -33,6 +33,7 @@ bannerBtn[0].addEventListener("click", function (e) {
 <img class="img-fluid w-100 bg-primary" src="images/bk-gray.png" alt="頁底">`;
   banner.innerHTML = str;
 });
+
 bannerBtn[1].addEventListener("click", function (e) {
   let str = `<div class="container" data-aos="fade-up">
     <div class="text-center">

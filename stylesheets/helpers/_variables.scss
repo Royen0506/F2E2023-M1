@@ -7,7 +7,7 @@
 
 // scss-docs-start gray-color-variables
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #E2E2E2 !default; //custom
 $gray-200: #e9ecef !default;
 $gray-300: #383735 !default;
 $gray-400: #ced4da !default;
@@ -46,6 +46,7 @@ $yellow: #ffc107 !default;
 $green: #198754 !default;
 $teal: #20c997 !default;
 $cyan: #E3F5FD !default;
+$info_100: #72CEF5;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -60,6 +61,7 @@ $colors: (
   "green": $green,
   "teal": $teal,
   "cyan": $cyan,
+  "info-100" : $info_100,
   "black": $black,
   "white": $white,
   "gray": $gray-600,
@@ -300,11 +302,13 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary: $blue !default;
 $secondary: $gray-300 !default;
+$secondary-gray100: $gray-100; //custom
 $success: $green !default;
 $info: $cyan !default;
+$info-100: $info-100 ; //custom
 $warning: $yellow !default;
 $danger: $red !default;
-$light: $gray-100 !default;
+$light: $gray-100 !default; //custom
 $dark: $black !default;
 // scss-docs-end theme-color-variables
 
@@ -318,6 +322,12 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "secondary-gray100": $secondary-gray100,
+  //custom
+  "info-100": $info-100,
+  //custom
+  "gray-300" : $gray-300,
+  //custom
   ) !default;
 // scss-docs-end theme-colors-map
 

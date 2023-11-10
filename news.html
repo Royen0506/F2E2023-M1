@@ -11,29 +11,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/all.css">
 
 </head>
 
-<body class="bg-secondary-gray100">
+
+<body data-aos="fade-up" class="bg-secondary-gray100">
     <!-- 導覽列 -->
-    <header class="bg-primary">
+    <header class="bg-secondary-gray100">
         <div class="container py-4 py-lg-2">
-            <nav class="navbar navbar-expand-lg bg-primary">
+            <nav class="navbar navbar-expand-lg bg-secondary-gray100">
                 <div class="container-fluid">
-                    <a class="navbar-brand mx-auto me-lg-5" href="index.html"><img src="images/Group.png"
-                            alt="LOGO"><img src="images/Group2.png" alt="LOGO"><img src="images/Group3.png"
-                            alt="LOGO"></a>
-                    <button class="btn btn-primary d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
-                            class="bi bi-list display-2"></i></button>
+                    <a class="navbar-brand mx-auto me-lg-5 d-none d-lg-block" href="index.html"><img
+                            src="images/Group.png" alt="LOGO"><img src="images/Group2.png" alt="LOGO"><img
+                            src="images/Group3.png" alt="LOGO"></a>
+                    <button class="btn btn-secondary-gray100 d-block d-lg-none ms-auto me-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                        aria-controls="offcanvasWithBothOptions"><i class="bi bi-list display-2"></i></button>
 
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item mx-lg-4">
                                 <a class="nav-link d-flex align-items-center" aria-current="page" href="news.html">
-                                    <img class="d-none d-lg-block" src="images/pawBtn.png" alt="導覽列圖片">
+                                    <img class="d-none d-lg-block" src="images/btn.png" alt="導覽列圖片">
                                     <span class="ms-3 title-l text-secondary">最新活動</span></a>
                             </li>
                             <li class="nav-item mx-lg-4">
@@ -60,6 +62,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
+
                         <div class="offcanvas-body d-lg-none d-flex align-items-center justify-content-center">
                             <ul class="navbar-nav mb-2">
                                 <li class="nav-item mx-auto">
@@ -102,30 +105,64 @@
         </div>
     </header>
 
-    <!-- Banner -->
-    <section id="banner" class="bg-primary">
-        <div class="container px-5">
-            <div class="row g-0">
-                <div class="col-lg-5 align-self-center">
-                    <img data-aos="fade-right" class="img-fluid" src="./images/text.png" alt="候選人名字">
-                    <button data-aos="fade-up" data-aos-once="true" data-aos-delay="200"
-                        class="banner-btn btn btn-dark mt-5 d-none d-lg-block rounded-5 title-l py- px4">候選人簡介<img
-                            class="img-fluid" src="./images/enter.png" alt="候選人簡介"></button>
+    <section>
+        <div class="text-center mt-lg-5"><img class="img-fluid" src="./images/news-title.png" alt=""></div>
+        <!-- 電腦版型 -->
+        <div class="container d-none d-lg-block">
+            <div class="text-start ms-lg-5">
+                <img class="img-fluid" src="./images/news-cat-web.png" alt="">
+            </div>
+            <div class="row d-flex justify-content-center">
+                <img class="col-lg-2 img-fluid object-fit-cover border-start border-3 border-dark"
+                    src="./images/card.png" alt="">
+                <div class="col-lg-6 align-self-center">
+                    <p class="d-inline-block text-info-100 bg-dark rounded-4 title-m px-3 py-1">2023.12.26</p>
+                    </di>
+                    <p class="title-m">參與台北寵物論壇，爭取貓咪友善環境</p>
+                    <p class="body-m text-gray-300 mb-0">
+                        炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！我相信，我們的都市中，每一隻貓咪都應該有自己的 VIP 休憩空間。</p>
                 </div>
-                <div class="col-lg-7">
-                    <img class="img-fluid w-100" src="./images/cat.png" alt="黑貓">
-                    <div class="d-flex justify-content-center">
-                        <button data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom"
-                            data-aos-delay="200"
-                            class="banner-btn btn btn-dark mt-5 d-block d-lg-none rounded-5 title-l py-2 px-4">
-                            候選人簡介<img src="./images/enter.png" alt="候選人簡介"></button>
-                    </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-4">
+                <img class="col-lg-2 img-fluid object-fit-cover border-start border-3 border-dark"
+                    src="./images/card2.png" alt="">
+                <div class="col-lg-6 align-self-center">
+                    <p class="d-inline-block text-info-100 bg-dark rounded-4 title-m px-3 py-1">2023.12.24</p>
+                    </di>
+                    <p class="title-m">掃街模式開啟！帶著你的貓耳，來和我一起走！</p>
+                    <p class="body-m text-gray-300 mb-0">
+                        街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋友都帶著貓耳來找我握手，真的太可愛了！這次的活動不僅讓我看到大家的熱情，更加堅定了我推進「貓咪友善環境」政策的決心。</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-4">
+                <img class="col-lg-2 img-fluid object-fit-cover border-start border-3 border-dark"
+                    src="./images/card3.png" alt="">
+                <div class="col-lg-6 align-self-center">
+                    <p class="d-inline-block text-info-100 bg-dark rounded-4 title-m px-3 py-1">2023.12.20</p>
+                    </di>
+                    <p class="title-m">收容所模特兒大比拼！</p>
+                    <p class="body-m text-gray-300 mb-0">
+                        今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了一場前所未有的「模特兒走秀」！</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 手機板型 -->
+        <img class="d-block d-lg-none img-fluid" src="images/news-cat-mobile.png" alt="">
+        <div id="mobile-news" class="container mt-2 m-lg-0 d-block d-lg-none">
+            <div class="swiper mx-4">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="d-flex justify-content-center my-4">
+                    <div class="button-prev me-3"><img id="button-prev" class="img-fluid" src="./images/prev.png"
+                            alt=""></div>
+                    <div class="button-next ms-3"><img id="button-next" class="img-fluid" src="./images/next.png"
+                            alt=""></div>
                 </div>
             </div>
         </div>
-        <img class="img-fluid w-100 bg-primary" src="images/bk-gray.png" alt="頁底">
     </section>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -134,6 +171,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/swiper.js"></script>
     <script src="JS/all.js"></script>
 </body>
 
