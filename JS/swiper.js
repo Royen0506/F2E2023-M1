@@ -21,7 +21,7 @@ const swiper = new Swiper(".swiper", {
   //   el: '.swiper-scrollbar',
 });
 
-let carouselData = [
+let newsCarouselData = [
   {
     id: "1",
     date: "2023.12.26",
@@ -54,7 +54,7 @@ const buttonNext = document.querySelector(".button-next");
 
 function renderData() {
   let str = "";
-  carouselData.forEach(function (item) {
+  newsCarouselData.forEach(function (item) {
     let content = `<div class="swiper-slide d-flex justify-content-center" data-swiper-autoplay="9000">
                         <div class="card rounded-5 d-flex bg-secondary-gray100 border-0" style="width: 20rem;">
                             <img src="${item.img}" class="card-img-top mb-2" alt="...">
@@ -71,4 +71,4 @@ function renderData() {
   });
   swiperWrapper.innerHTML = str;
 }
-renderData(carouselData);
+renderData(newsCarouselData);

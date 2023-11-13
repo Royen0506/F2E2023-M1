@@ -13345,8 +13345,6 @@ textarea.form-control-lg {
   color: #000;
   background-color: #AEADAB;
   border: #AEADAB;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
 }
 
 #banner {
@@ -13368,4 +13366,9 @@ textarea.form-control-lg {
 }
 .button-next:hover {
   scale: 1.2;
+}
+
+.contact-btn:hover {
+  background-color: #72CEF5;
+  border-color: #72CEF5;
 }/*# sourceMappingURL=all.css.map */

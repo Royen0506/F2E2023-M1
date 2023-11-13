@@ -66,3 +66,13 @@ bannerBtn[1].addEventListener("click", function (e) {
 <img class="img-fluid w-100 bg-primary" src="images/bk-gray.png" alt="頁底">`;
   banner.innerHTML = str;
 });
+
+const bannerEnterBtnImg = document.querySelector("#enterBtn");
+bannerBtn[0].addEventListener("mouseenter", function (e) {
+  console.log("滑入");
+  bannerEnterBtnImg.setAttribute("src", "./images/enter2.png");
+});
+
+bannerBtn[0].addEventListener("mouseout", function (e) {
+  bannerEnterBtnImg.setAttribute("src", "./images/enter.png");
+});
