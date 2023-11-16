@@ -105,8 +105,74 @@
         </div>
     </header>
 
-    <section>
+    <section class="mb-5">
         <div class="text-center mt-lg-5"><img class="img-fluid" src="./images/donatetitle.png" alt=""></div>
+        <div class="container mt-5">
+            <div class="d-flex flex-column flex-lg-column-reverse">
+                <div class="row justify-content-center mx-5 mt-5 mt-lg-0">
+                    <div class="bg-info-200 text-center rounded-3 py-3 mb-4 mt-lg-5">
+                        <p id="donateTitle" class="mb-0 body-m">目前贊助總額</p>
+                        <p id="donateMoney" class="mb-0 title-l">$987,655,873</p>
+                    </div>
+                    <p class="d-none d-lg-block title-l text-center">您的小筆捐款，是每隻毛孩未來的大大動力！</p>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-2 mx-4 mx-lg-0">
+                    <div class="align-self-center">
+                        <button id="donate-sm"
+                            class="btn d-flex border border-2 rounded-3 text-nowrap py-3 px-3 w-100 justify-content-center">
+                            <div class="d-lg-flex">
+                                <p class="mb-0 mx-3 fs-2 fw-bold text-gray-300">喵星人之友</p>
+                                <p class="mb-0 mx-3 fs-2 fw-bold text-gray-300">NT$ 600</p>
+                            </div>
+                            <p class="mb-0 mx-1 align-self-center fs-5 text-gray-300">已有9957人贊助</p>
+                        </button>
+                        <button id="donate-md"
+                            class="btn d-flex border border-2 rounded-3 text-nowrap py-3 mt-4 px-3 w-100 justify-content-center">
+                            <div class="d-lg-flex">
+                                <p class="mb-0 mx-3 fs-2 fw-bold text-gray-300">喵星大使</p>
+                                <p class="mb-0 mx-3 fs-2 fw-bold text-gray-300">NT$ 6,000</p>
+                            </div>
+                            <p class="mb-0 mx-1 align-self-center fs-5 text-gray-300">已有2000人贊助</p>
+                        </button>
+                        <button id="donate-lg"
+                            class="btn d-flex border border-2 rounded-3 text-nowrap py-3 mt-4 px-3 w-100 justify-content-center">
+                            <div class="d-lg-flex">
+                                <p class="mb-0 mx-3 fs-2 fw-bold text-gray-300">喵星傳奇</p>
+                                <p class="mb-0 mx-3 fs-2 fw-bold text-gray-300">NT$60,000</p>
+                            </div>
+                            <p class="mb-0 mx-1 align-self-center fs-5 text-gray-300">已有999人贊助</p>
+                        </button>
+                        <button id="donate-cus" class="btn border border-2 rounded-3 text-nowrap py-5 mt-4 px-3 w-100">
+                            <div class="d-lg-flex mb-1">
+                                <p class="mb-0 mx-1 fs-2 fw-bold text-gray-300">自訂贊助金額</p>
+                            </div>
+                            <div class="d-flex">
+                                <span
+                                    class="input-group-text rounded-end-0 bg-white border-end-0 fw-bold fs-3">NT$</span>
+                                <input type="text" id="customDonate" class="form-control rounded-start-0 border-start-0"
+                                    aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </button>
+                        <div class="row d-flex flex-column d-lg-none align-items-center">
+                            <button type="submit"
+                                class="btn btn-dark mt-4 rounded-5 title-l px-4 col-7 banner-btn">前往捐款<img
+                                    class="img-fluid" src="./images/enter.png" alt=""></button>
+                            <p class="mt-4 title-s text-center">您的小筆捐款<br>是每隻毛孩未來的大大動力！</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="row d-none d-lg-flex flex-column align-items-center">
+                            <img id="donateImg" src="./images/sponsor4.png" alt="">
+                            <button type="submit"
+                                class="btn btn-dark mt-4 rounded-5 title-l px-4 col-6 banner-btn">前往捐款<img
+                                    class="img-fluid" src="./images/enter.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -117,7 +183,6 @@
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="JS/swiper.js"></script>
     <script src="JS/all.js"></script>
 </body>
 

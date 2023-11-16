@@ -4,7 +4,7 @@
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0em;
-    text-align: left;
+
 }
 
 .title-m {
@@ -14,7 +14,7 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+
 }
 
 .title-s {
@@ -23,7 +23,7 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
+
 }
 
 .h6 {
@@ -32,7 +32,7 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0em;
-    text-align: left;
+
 }
 
 .h5 {
@@ -42,7 +42,7 @@
     font-weight: 700;
     line-height: 34px;
     letter-spacing: 0em;
-    text-align: left;
+
 }
 
 .h2 {
@@ -51,7 +51,16 @@
     font-weight: 700;
     line-height: 54px;
     letter-spacing: 0em;
-    text-align: left;
+
+}
+
+.h3 {
+    font-family: $font-family-sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+
 }
 
 .body-l {
@@ -60,7 +69,7 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+
 }
 
 .body-s {
@@ -69,8 +78,9 @@
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
-    text-align: left;
 }
+
+
 
 .body-m {
     font-family: $font-family-sans-serif;
@@ -78,7 +88,6 @@
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
 }
 
 
@@ -89,7 +98,6 @@
         font-weight: 700;
         line-height: 54px;
         letter-spacing: 0em;
-        text-align: left;
     }
 
     #banner-h5 {
@@ -98,7 +106,6 @@
         font-weight: 700;
         line-height: 34px;
         letter-spacing: 0em;
-        text-align: left;
     }
 
     #banner-p {
@@ -107,6 +114,23 @@
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0em;
-        text-align: left;
     }
+
+    #donateTitle {
+        font-family: $font-family-sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0em;
+    }
+
+    #donateMoney {
+        font-family: $font-family-sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+
+
 }

@@ -1,0 +1,17 @@
+.donate-list:hover {
+    cursor: pointer;
+}
+
+.donate-list-active {
+
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+        scale: 1.01;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.21);
+        -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.21);
+        -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.21);
+        background-color: #72CEF5;
+        outline: 0;
+    }
+}
